@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div class="section-items">
-                <img class="img-logo" src="./img/logo-mercado-liebre.svg" style="width: 361px;">
+                <a href="/"><img class="img-logo" src="./img/logo-mercado-liebre.svg" style="width: 361px;"></a>
                 <i class="fa-solid fa-bars"></i>
                 <div class="buscador">
                 <form action=""  method="get">
@@ -24,7 +24,7 @@
                       id=""
                       placeholder="Buscar productos, marcas"
                     />
-                    <button type="submit">enviar</button>
+                    <button class="btn-enviar" type="submit">enviar</button>
                   </form>
                   <a href="">Comprá en cuotas y sin tarjeta de crédito</a>
                 </div>
@@ -32,7 +32,7 @@
             
             <div class="section-items">
                 <ul class="menu">
-                    <li><a href="">Ofertas</a></li>
+                    <li><a href="/">Ofertas</a></li>
                     <li><a href="">Tiendas Oficiales</a></li>
                     <li><a href=""></a>Vender</li>
                     <li><a href="">Ayuda</a></li>
@@ -47,27 +47,38 @@
         <div class="banner"></div>
        </header>
        <main>
-            <h1 style="text-align: center;">REGISTRO</h1>
+        <div class="contenedor-login">
+            <h1 style="text-align: center;">LOGIN</h1>
             <form class="formulario" action="respuesta.js" method="get">
                 <label for="usuario">Ingrese su Usuario o Email:</label>
                 <input type="text" name="usuario" id="usuario" placeholder="Perez, Juan">
                 <label for="password">Contraseña</label>
-                <input type="password" name="password" id="">
-                <label for="passwordC">Confirmar Contraseña</label>
-                <input type="password" name="passwordC" id="">
-                <button type="reset">borrar</button>
-                <button type="submit">enviar</button>
+                <input type="password" name="password" id="" placeholder="Ingrese su contraseña">
+                <!-- <button class="btn-borrar" type="reset">borrar</button> -->
+                <button class="btn-enviar" type="submit">enviar</button>
             </form>
+        </div>
        </main>
-    <footer>
-        <h1>Pagá con tarjeta o en efectivo</h1>
-        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        <h1>● Envío gratis desde $ 2.500</h1>
-        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        <h1>● Seguridad, de principio a fin</h1>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+       <footer>
+        <div class="contenedor-f">
+            <div class="footer-div">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div class="footer-div">
+                <i class="fa-solid fa-gift"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="footer-div">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </div>
+        </div>
 
-<h1>● Copyright © 1999-2020 MercadoLiebre S.R.L.</h1>
+<p style="margin-top: 20px;">● Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
 </html>

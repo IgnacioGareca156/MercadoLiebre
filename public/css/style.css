@@ -19,13 +19,15 @@ header{
 .img-logo{
     width: 361px;
 }
-img{
-    width: 361px;
+.img-cards{
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 3%;
 }
 
-div{
-    align-items: center;
-}
+
 section{
     align-items: center;
     align-content: center;
@@ -43,12 +45,35 @@ section{
     flex-direction: row; */
     /* display:flex ; */    
 }
+.nombre-prod{
+    text-align: left;
+    margin: 10px;
+}
 .precios{
     display: flex; 
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    align-items:flex-start;
+    justify-content:left;
+    margin: 10px;
 }
+.product-desc-box > .fa-truck{
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    }
+    .product-desc-box {
+        position: relative;
+        }
+
 .contenedor-padre{
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +86,39 @@ h2{
 }
 footer{
     text-align: center;
+    background-color: #ffffff;
+    color: #666;
+}
+
+.contenedor-f{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footer-div{
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 400px;
+}
+
+.fa-credit-card{
+    color: #1259c3; 
+    font-size: 36px;
+}
+
+.fa-gift{
+    color: #1259c3;
+    font-size: 36px;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    font-size: 36px;
 }
 
 .section-items{
@@ -101,9 +159,89 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.contenedor-login{
+    align-items: center;
+    flex-direction: column;
+    margin: 120px;
+}
+.btn-borrar {
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Cambiar el color del botón cuando se pasa el cursor por encima */
+  .btn-borrar:hover {
+    background-color: #c82333; /* Color de fondo rojo oscuro */
+  }
+  
+  /* Cambiar el tamaño del botón cuando se hace clic */
+  .btn-borrar:active {
+    transform: scale(0.95);
+  }
+  .btn-enviar {
+    background-color: #1259c3; /* Color de fondo verde */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+  }
+  
+  /* Cambiar el color del botón cuando se pasa el cursor por encima */
+  .btn-enviar:hover {
+    background-color: #218838; /* Color de fondo verde oscuro */
+  }
+  
+  /* Cambiar el tamaño del botón cuando se hace clic */
+  .btn-enviar:active {
+    transform: scale(0.95);
+  }
+input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  /* Cambiar estilo cuando el elemento está enfocado */
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .select-estilizado {  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Cambiar el cursor cuando se pasa el cursor por encima del select */
+  .select-estilizado:hover {
+    border-color: #007bff; /* Color del borde azul cuando se pasa el cursor */
+  }
+  
+  /* Cambiar el estilo del select cuando está enfocado */
+  .select-estilizado:focus {
+    border-color: #007bff; /* Color del borde azul cuando está enfocado */
+    outline: none;
+  }
 .oferta{
     color: #39b54a;
     font-size: small;
+    margin-left: 8px;
 }
 
 .precios{
@@ -115,6 +253,9 @@ footer{
     color: #ffff;
     padding: 5px;
     border-radius: 20%;
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
 }
 
 .buscador{
@@ -130,14 +271,22 @@ footer{
 }
 
 @media (min-width: 460px){
-    .menu{
-        display: flex;
-    }
+    
     .buscador{
         display: flex;
     }
+    .menu{
+        display: flex;
+    }
+    .fa-bars{
+        display: flex;
+    }
+       
 }
 
 @media (min-width: 768px){
+     .fa-bars{
+        display: none;
+     }
     
 }
