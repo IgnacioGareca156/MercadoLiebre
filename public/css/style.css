@@ -146,23 +146,28 @@ footer{
     text-decoration: none;
 }
 
-.formulario{
+.formulario-login{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #EAC926;
-    justify-content: center;
+    align-items: center;  
+    flex-wrap: wrap;
     
 }
-.login{
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 .contenedor-login{
     align-items: center;
     flex-direction: column;
-    margin: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.formulario-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    flex-wrap: wrap;
 }
 .btn-borrar {
     background-color: #dc3545; /* Color de fondo rojo */
@@ -206,7 +211,7 @@ footer{
     transform: scale(0.95);
   }
 input {
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
