@@ -1,0 +1,143 @@
+*{
+        margin: 0;    padding: 0;
+}
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+body{
+    font-family: Roboto;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+}
+.img-logo{
+    width: 361px;
+}
+img{
+    width: 361px;
+}
+
+div{
+    align-items: center;
+}
+section{
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.card{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    margin: 10px;
+    border-radius: 2%;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    /* display:flex ; */    
+}
+.precios{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+h2{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
+.section-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    justify-content: space-around;
+}
+.menu{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+.menu li{
+    margin-left: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAC926;
+    justify-content: center;
+    
+}
+.login{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.oferta{
+    color: #39b54a;
+    font-size: small;
+}
+
+.precios{
+    flex-direction: row;
+}
+
+.fa-bars{
+    background-color: #1259c3;
+    color: #ffff;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.buscador{
+    display: none;
+    flex-direction: column;
+}
+
+.banner{
+    background-image: url("../img/img-home-banner.jpg") ;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+@media (min-width: 460px){
+    .menu{
+        display: flex;
+    }
+    .buscador{
+        display: flex;
+    }
+}
+
+@media (min-width: 768px){
+    
+}
